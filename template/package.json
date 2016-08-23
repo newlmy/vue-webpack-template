@@ -15,17 +15,9 @@
     {{#e2e}}
     "e2e": "node test/e2e/runner.js",
     {{/e2e}}
-{
-{
-#lint
-}
-},
-"lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
-{
-{
-/lint
-}
-}
+    {{#lint}},
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    {{/lint}}
   },
   "dependencies": {
     "vue": "^1.0.21",
