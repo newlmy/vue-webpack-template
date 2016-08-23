@@ -8,8 +8,7 @@
     "dev": "export NODE_ENV=development&&node build/buildDev.js",
     "test": "export NODE_ENV=testing&&node build/buildDev.js",
     "build": "export NODE_ENV=production&&node build/build.js",
-    "dll": "node build/buildDll.js",
-    {{#unit}}
+    "dll": "node build/buildDll.js"{{#unit}},
     "unit": "karma start test/unit/karma.conf.js --single-run",
     {{/unit}}
     {{#e2e}}
